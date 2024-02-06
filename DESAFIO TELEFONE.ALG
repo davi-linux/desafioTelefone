@@ -41,12 +41,17 @@ Inicio
                      escreva("Informe a quantidade de clientes: ")
                      leia(qtdP)
             fimenquanto
+   //jogando o valor para a matriz de forma manual
+
      assin[0,0] <- 25.5
      assin[0,1] <- 0.10
      assin[1,0] <- 35.0
      assin[1,1] <- 0.12
      assin[2,0] <- 60.0
      assin[2,1] <- 0.15
+
+    //PARA onde armazenara os dados do usuario
+    
             para i de 0 ate qtdP - 1 faca
             
                  escreval("Dados do ", i+1 , "o. Cliente:")
@@ -56,6 +61,9 @@ Inicio
                  leia(telefone[i])
                  escreva("Tipo: ")
                  leia(tip[i])
+                 
+   //condicao para verificar se esta correto a entrada do usuario
+   
                   enquanto (tip[i] < 0 ) ou (tip[i] > 2) faca
                      escreval
                      escreval("Escolha entre 0 a 2!!!")
@@ -67,7 +75,8 @@ Inicio
                  escreva("Minutos: ")
                  leia(minutos[i])
                  escreval
-                 
+  //escolha para fazer o calculo da conta final
+  
                  escolha tip[i]
 
                          caso 0
@@ -97,7 +106,8 @@ Inicio
                  fimescolha
                  
             fimpara
-
+ //impressao da tabela de preço e valor excedente
+ 
             escreval("Informe o preco basico e execendente de cada tipo de conta:")
             
             para i de 0 ate 2 faca
@@ -109,6 +119,8 @@ Inicio
 
             fimpara
             
+ //impressao do relatorio final
+ 
             escreval("RELATÓRIO DOS CLIENTES:")
             escreval
             
